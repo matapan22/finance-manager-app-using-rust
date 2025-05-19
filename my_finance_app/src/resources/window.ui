@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <object class="GtkApplicationWindow" id="main_window">
+    <property name="title">My Finance App</property>
+    <property name="default-width">400</property>
+    <property name="default-height">600</property>
+
+    <!-- Header Bar -->
+    <property name="titlebar">
+      <object class="GtkHeaderBar" id="header_bar">
+
+        <!-- menu buttons -->
+        <child type="start">
+        <object class="GtkMenuButton" id="menu_button">
+          <property name="icon-name">open-menu-symbolic</property>
+          <property name="tooltip-text" translatable="yes">Menu</property>
+          <property name="popover">
+            <object class="GtkPopover" id="menu_popover">
+              <child>
+                <object class="GtkBox">
+                  <property name="orientation">vertical</property>
+                  <property name="spacing">10</property>
+                    <child>
+                      <object class="GtkButton" id="call_transactions_button">
+                        <property name="label" translatable="yes">Add New Transactions</property>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkButton" id="set_budget_button">
+                        <property name="label" translatable="yes">Set Budget</property>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkButton" id="add_category_button">
+                        <property name="label" translatable="yes">Add New Category</property>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkButton" id="insight_button">
+                        <property name="label" translatable="yes">Insights</property>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkButton" id="statement_button">
+                        <property name="label" translatable="yes">Statement</property>
+                      </object>
+                    </child>
+                </object>
+              </child>
+            </object>
+          </property>
+        </object>
+        </child>
+        
+    
+      </object>
+    </property>
+
+    
+
+
+    <!-- Main Content -->
+    <child>
+      <object class="GtkBox" id="main_box">
+        <property name="orientation">vertical</property>
+        <property name="spacing">10</property>
+        <property name="margin-start">20</property>
+        <property name="margin-end">20</property>
+        <property name="margin-top">20</property>
+        <property name="margin-bottom">20</property>
+       
+           
+      <!--Title Text -->
+      <child>
+        <object class="GtkLabel">
+          <property name="label" translatable="yes">Finance Manager App </property>
+          <property name="margin-bottom">30</property>
+          <style>
+            <class name="title-1"/>
+          </style>
+        </object>
+      </child>
+
+
+
+      <!--Balance Label -->
+      <child>
+        <object class="GtkLabel">
+          <property name="label" translatable="yes">Available Balance: </property>
+          <property name="margin-bottom">5</property>
+          <style>
+            <class name="title-2"/>
+          </style>
+        </object>
+      </child>
+
+      <!--Display Available Balance -->
+      <child>
+          <object class="GtkLabel" id="balance_label">
+            <property name="label">Loading Balance...</property>
+            <property name="margin-bottom">40</property>
+            <style>
+            <class name="title-4"/>
+          </style>
+          </object>
+        </child>
+
+
+
+
+      <!--Transaction label-->
+      <child>
+        <object class="GtkLabel">
+          <property name="label" translatable="yes">Transactions: </property>
+          <property name="margin-bottom">30</property>
+          <style>
+            <class name="title-4"/>
+          </style>
+        </object>
+      </child>
+
+      <!-- Transaction Scroll Window -->
+      <child>
+        <object class="GtkScrolledWindow">
+        <property name="min-content-height">150</property>  <!-- Set Minimum Height -->
+        <property name="min-content-width">300</property>   <!-- Set Minimum Width -->
+        <property name="max-content-height">400</property>  <!-- Limit Maximum Height -->
+        <property name="max-content-width">500</property>   <!-- Limit Maximum Width -->
+        <child>
+          <object class="GtkTreeView" id="transactions_treeview">
+            <property name="headers-visible">true</property>
+            <child>
+              <object class="GtkTreeViewColumn">
+                <property name="title">Transaction Type</property>
+                <child>
+                  <object class="GtkCellRendererText"/>
+                  <attributes>
+                    <attribute name="text">0</attribute> <!-- Column 0 -->
+                  </attributes>
+                </child>
+              </object>
+            </child>
+
+            <child>
+              <object class="GtkTreeViewColumn">
+                <property name="title">Amount</property>
+                <child>
+                  <object class="GtkCellRendererText"/>
+                  <attributes>
+                    <attribute name="text">1</attribute> <!-- Column 1 -->
+                  </attributes>
+                </child>
+              </object>
+            </child>
+
+            <child>
+              <object class="GtkTreeViewColumn">
+                <property name="title">Date</property>
+                <child>
+                  <object class="GtkCellRendererText"/>
+                  <attributes>
+                    <attribute name="text">2</attribute> <!-- Column 2 -->
+                  </attributes>
+                </child>
+              </object>
+            </child>
+
+
+            <child>
+              <object class="GtkTreeViewColumn">
+                <property name="title">Category</property>
+                <child>
+                  <object class="GtkCellRendererText"/>
+                  <attributes>
+                    <attribute name="text">3</attribute> <!-- Column 3 -->
+                  </attributes>
+                </child>
+              </object>
+            </child>
+
+          </object>
+        </child>
+        </object>
+      </child>
+
+
+        <!-- View Transaction Button -->
+        <child>
+          <object class="GtkButton" id="view_tranasctions_button">
+            <property name="label" translatable="yes">See All Transaction</property>
+            <property name="width-request">150</property>
+            <property name="height-request">50</property>
+          </object>
+        </child>
+
+      </object>
+    </child>
+  </object>
+
+</interface>

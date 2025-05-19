@@ -1,0 +1,8 @@
+C:\Mathew Siby\Mathew Siby\TH Bingen\Rust\finance-manager-app-using-rust\my_finance_app\target\debug\build\target-lexicon-377155c8d825185b\build_script_build-377155c8d825185b.exe: C:\Users\Mathew\ Siby\.cargo\registry\src\index.crates.io-6f17d22bba15001f\target-lexicon-0.12.16\build.rs C:\Users\Mathew\ Siby\.cargo\registry\src\index.crates.io-6f17d22bba15001f\target-lexicon-0.12.16\src/data_model.rs C:\Users\Mathew\ Siby\.cargo\registry\src\index.crates.io-6f17d22bba15001f\target-lexicon-0.12.16\src/triple.rs C:\Users\Mathew\ Siby\.cargo\registry\src\index.crates.io-6f17d22bba15001f\target-lexicon-0.12.16\src/targets.rs
+
+C:\Mathew Siby\Mathew Siby\TH Bingen\Rust\finance-manager-app-using-rust\my_finance_app\target\debug\build\target-lexicon-377155c8d825185b\build_script_build-377155c8d825185b.d: C:\Users\Mathew\ Siby\.cargo\registry\src\index.crates.io-6f17d22bba15001f\target-lexicon-0.12.16\build.rs C:\Users\Mathew\ Siby\.cargo\registry\src\index.crates.io-6f17d22bba15001f\target-lexicon-0.12.16\src/data_model.rs C:\Users\Mathew\ Siby\.cargo\registry\src\index.crates.io-6f17d22bba15001f\target-lexicon-0.12.16\src/triple.rs C:\Users\Mathew\ Siby\.cargo\registry\src\index.crates.io-6f17d22bba15001f\target-lexicon-0.12.16\src/targets.rs
+
+C:\Users\Mathew\ Siby\.cargo\registry\src\index.crates.io-6f17d22bba15001f\target-lexicon-0.12.16\build.rs:
+C:\Users\Mathew\ Siby\.cargo\registry\src\index.crates.io-6f17d22bba15001f\target-lexicon-0.12.16\src/data_model.rs:
+C:\Users\Mathew\ Siby\.cargo\registry\src\index.crates.io-6f17d22bba15001f\target-lexicon-0.12.16\src/triple.rs:
+C:\Users\Mathew\ Siby\.cargo\registry\src\index.crates.io-6f17d22bba15001f\target-lexicon-0.12.16\src/targets.rs:

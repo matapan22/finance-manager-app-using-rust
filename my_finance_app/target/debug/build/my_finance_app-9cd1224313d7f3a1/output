@@ -1,0 +1,4 @@
+cargo:rerun-if-changed=src/resources/resources.gresource.xml
+cargo:rerun-if-changed=src/resources/viewtransactions.ui
+cargo:rerun-if-changed=src/resources/transactionwindow.ui
+cargo:rerun-if-changed=src/resources/window.ui

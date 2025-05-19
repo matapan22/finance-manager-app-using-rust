@@ -1,0 +1,9 @@
+/home/Mathew/Desktop/Rust/finance-manager-app-using-rust/my_finance_app/target/release/deps/libgtk4_macros-002486842c922cfd.so: /home/Mathew/.cargo/registry/src/index.crates.io-6f17d22bba15001f/gtk4-macros-0.9.5/src/lib.rs /home/Mathew/.cargo/registry/src/index.crates.io-6f17d22bba15001f/gtk4-macros-0.9.5/src/attribute_parser.rs /home/Mathew/.cargo/registry/src/index.crates.io-6f17d22bba15001f/gtk4-macros-0.9.5/src/composite_template_derive.rs /home/Mathew/.cargo/registry/src/index.crates.io-6f17d22bba15001f/gtk4-macros-0.9.5/src/template_callbacks_attribute.rs /home/Mathew/.cargo/registry/src/index.crates.io-6f17d22bba15001f/gtk4-macros-0.9.5/src/util.rs
+
+/home/Mathew/Desktop/Rust/finance-manager-app-using-rust/my_finance_app/target/release/deps/gtk4_macros-002486842c922cfd.d: /home/Mathew/.cargo/registry/src/index.crates.io-6f17d22bba15001f/gtk4-macros-0.9.5/src/lib.rs /home/Mathew/.cargo/registry/src/index.crates.io-6f17d22bba15001f/gtk4-macros-0.9.5/src/attribute_parser.rs /home/Mathew/.cargo/registry/src/index.crates.io-6f17d22bba15001f/gtk4-macros-0.9.5/src/composite_template_derive.rs /home/Mathew/.cargo/registry/src/index.crates.io-6f17d22bba15001f/gtk4-macros-0.9.5/src/template_callbacks_attribute.rs /home/Mathew/.cargo/registry/src/index.crates.io-6f17d22bba15001f/gtk4-macros-0.9.5/src/util.rs
+
+/home/Mathew/.cargo/registry/src/index.crates.io-6f17d22bba15001f/gtk4-macros-0.9.5/src/lib.rs:
+/home/Mathew/.cargo/registry/src/index.crates.io-6f17d22bba15001f/gtk4-macros-0.9.5/src/attribute_parser.rs:
+/home/Mathew/.cargo/registry/src/index.crates.io-6f17d22bba15001f/gtk4-macros-0.9.5/src/composite_template_derive.rs:
+/home/Mathew/.cargo/registry/src/index.crates.io-6f17d22bba15001f/gtk4-macros-0.9.5/src/template_callbacks_attribute.rs:
+/home/Mathew/.cargo/registry/src/index.crates.io-6f17d22bba15001f/gtk4-macros-0.9.5/src/util.rs:

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <object class="GtkApplicationWindow" id="transactionwindow">
+    <property name="title">My Finance App</property>
+    <property name="default-width">400</property>
+    <property name="default-height">600</property>
+
+    <!-- Header Bar -->
+    <property name="titlebar">
+      <object class="GtkHeaderBar" id="header_bar">
+
+        <!-- Start Child -->
+        <child type="start">
+          <object class="GtkMenuButton" id="open_menu_button">
+            <property name="label" translatable="yes">Open</property>
+            <property name="menu-model">open_menu</property>
+            <property name="icon-name">open-menu-symbolic</property>
+            <property name="tooltip-text" translatable="yes">Main Menu</property>
+            <!-- Define menu-model in code -->
+          </object>
+        </child>
+  
+      </object>
+    </property>
+
+    <!-- Main Content -->
+    <child>
+      <object class="GtkBox" id="main_box">
+        <property name="orientation">vertical</property>
+        <property name="spacing">10</property>
+        <property name="margin-start">20</property>
+        <property name="margin-end">20</property>
+        <property name="margin-top">20</property>
+        <property name="margin-bottom">20</property>
+      
+      
+      <!--Title Text -->
+      <child>
+        <object class="GtkLabel">
+          <property name="label" translatable="yes">Finance Manager App </property>
+          <property name="margin-bottom">30</property>
+          <style>
+            <class name="title-1"/>
+          </style>
+        </object>
+      </child>
+
+
+
+      <!--Add Transaction Label -->
+      <child>
+        <object class="GtkLabel">
+          <property name="label" translatable="yes">Add Transaction </property>
+          <property name="margin-bottom">30</property>
+          <style>
+            <class name="title-1"/>
+          </style>
+        </object>
+      </child>
+
+      
+
+      <!--Text Field Transaction-->
+      <child>
+        <object class="GtkEntry" id="transaction_entry">
+          <property name="placeholder-text" translatable="yes">Enter Amount</property>
+        </object>
+      </child>
+
+      <!--Display Information -->
+      <child>
+          <object class="GtkLabel">
+            <property name="label">Select Transaction Type:</property>
+          </object>
+      </child>
+
+
+      <!--Gtk Box for proper placement -->
+      <child>
+      <object class="GtkBox">
+        <property name="orientation">horizontal</property>  <!-- Horizontal Layout -->
+        <property name="spacing">10</property>  <!-- Space between buttons -->
+        <property name="halign">center</property>  <!-- Align in center -->
+        <property name="margin-top">10</property>  <!-- Space above the buttons -->
+        <property name="margin-bottom">10</property>  <!-- Space below the buttons -->
+
+        <!-- Income Toggle Button -->
+        <child>
+          <object class="GtkToggleButton" id="button_Income">
+            <property name="label" translatable="yes">Income</property>
+            <property name="width-request">150</property>  <!-- Set Width -->
+            <property name="height-request">50</property>  <!-- Set Height -->
+            <property name="active">true</property>
+          </object>
+        </child>
+
+        <!-- Expense Toggle Button -->
+        <child>
+          <object class="GtkToggleButton" id="button_Expense">
+            <property name="label" translatable="yes">Expense</property>
+            <property name="group">button_Income</property>  <!-- Group with Income button -->
+            <property name="width-request">150</property>  <!-- Set Width -->
+            <property name="height-request">50</property>  <!-- Set Height -->
+          </object>
+        </child>
+
+    </object>
+  </child>
+
+
+
+    <!--Drop down for category -->
+    <child>
+      <object class="GtkComboBoxText" id="category_dropdown">
+        <property name="halign">center</property>  <!-- Center the dropdown -->
+        <property name="width-request">200</property>  <!-- Set width -->
+        <property name="has-entry">False</property>  <!-- Ensure it's a dropdown -->
+      </object>
+    </child>
+
+      <!--Label for message display -->
+      <child>
+        <object class="GtkLabel" id="transaction_error">
+          <property name="label" translatable="yes"> </property>
+        </object>
+      </child>
+
+
+        <!-- Button to save transaction-->
+        <child>
+          <object class="GtkButton" id="add_transactions_button">
+            <property name="label" translatable="yes">Enter Transaction</property>
+            <property name="width-request">150</property>
+            <property name="height-request">50</property>
+          </object>
+        </child>
+
+
+      </object>
+    </child>
+  </object>
+
+
+
+
+
+  <menu id="open_menu">
+    <section>
+      <item>
+        <attribute name="label" translatable="yes">Add Transactions</attribute>
+      </item>
+      <item>
+        <attribute name="label" translatable="yes">Add Budget</attribute>
+      </item>
+      <item>
+        <attribute name="label" translatable="yes">Add Category</attribute>
+      </item>
+      <item>
+        <attribute name="label" translatable="yes">View Transactions</attribute>
+      </item>
+      <item>
+        <attribute name="label" translatable="yes">Insights</attribute>
+      </item>
+      <item>
+        <attribute name="label" translatable="yes">Statement</attribute>
+      </item>
+    </section>
+  </menu>
+
+
+
+
+</interface>
